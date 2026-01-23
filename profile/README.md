@@ -24,12 +24,35 @@ Nosso foco é democratizar o conhecimento sobre **Data Streaming**, **Integraç�
 
 ---
 
-## 📚 O Que Você Encontra Aqui
+## 🔬 Labs 2026
 
-- **Labs Práticos** — Ambientes completos para experimentar tecnologias de streaming
-- **Casos de Uso Reais** — Implementações inspiradas em cenários de produção
-- **Código Documentado** — Exemplos comentados para facilitar o aprendizado
-- **Arquiteturas de Referência** — Patterns e boas práticas da indústria
+### Utility
+
+| Repositório | Descrição |
+|-------------|-----------|
+| [data-gen](https://github.com/intelium-labs/data-gen) | Gerador de dados fictícios utilizado por todos os labs |
+
+### H1 2026
+
+| # | Mês | Lab | Stack |
+|---|-----|-----|-------|
+| 01 | Janeiro | [kafka-fundamentals](https://github.com/intelium-labs/kafka-fundamentals) | Kafka, Schema Registry, Kafka UI |
+| 02 | Janeiro | flink-fundamentals | Flink, Kafka |
+| 03 | Janeiro | trino-fundamentals | Trino, PostgreSQL, MinIO |
+| 04 | Fevereiro | stream-processing-flink-sql | Flink, Kafka, PostgreSQL |
+| 05 | Abril | fraud-detection-rt | Kafka, Flink, Redis, Grafana |
+| 06 | Maio | query-federation-trino-kafka | Trino, Kafka, PostgreSQL, MinIO |
+| 07 | Julho | governance-lenses | Kafka, Lenses.io, Schema Registry |
+
+### H2 2026
+
+| # | Mês | Lab | Stack |
+|---|-----|-----|-------|
+| 08 | Agosto | TBA | — |
+| 09 | Setembro | TBA | — |
+| 10 | Outubro | TBA | — |
+| 11 | Novembro | TBA | — |
+| 12 | Dezembro | TBA | — |
 
 ---
 
@@ -62,12 +85,3 @@ Nosso foco é democratizar o conhecimento sobre **Data Streaming**, **Integraç�
 <p align="center">
   <strong>Streaming de conhecimento, em tempo real.</strong>
 </p>
-```
-
----
-
-## Tópicos Sugeridos para a Organização
-```
-data-streaming, apache-kafka, confluent, apache-flink, trino, real-time-analytics, 
-data-engineering, event-driven-architecture, docker-compose, hands-on-labs, 
-data-integration, schema-registry, lenses-io, python, sql
