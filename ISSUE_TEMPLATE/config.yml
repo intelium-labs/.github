@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Discussões Gerais
+    url: https://github.com/orgs/intelium-labs/discussions
+    about: Dúvidas, ideias sobre novas ferramentas ou conversas gerais
+  - name: 🌐 Site Intelium
+    url: https://intelium.ai
+    about: Visite nosso site para artigos e conteúdo técnico

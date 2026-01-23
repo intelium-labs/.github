@@ -1,0 +1,65 @@
+name: 🐛 Bug Report
+description: Reporte um problema em algum lab
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por reportar! Preencha as informações abaixo para nos ajudar a resolver o problema.
+
+  - type: dropdown
+    id: lab
+    attributes:
+      label: Qual lab?
+      description: Selecione o lab onde encontrou o problema
+      options:
+        - data-gen
+        - kafka-fundamentals
+        - flink-fundamentals
+        - trino-fundamentals
+        - stream-processing-flink-sql
+        - fraud-detection-rt
+        - query-federation-trino-kafka
+        - governance-lenses
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Descrição do problema
+      description: Descreva o que aconteceu
+      placeholder: O que aconteceu? O que você esperava que acontecesse?
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Como reproduzir
+      description: Passos para reproduzir o problema
+      placeholder: |
+        1. Execute `docker-compose up -d`
+        2. Acesse http://localhost:8080
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Output do `docker-compose logs` (se aplicável)
+      render: shell
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Ambiente
+      description: Informações sobre seu ambiente
+      placeholder: |
+        - OS: macOS 14.0 / Ubuntu 22.04 / Windows 11
+        - Docker: 24.0.0
+        - Docker Compose: v2.20.0
+    validations:
+      required: true

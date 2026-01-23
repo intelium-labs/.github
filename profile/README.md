@@ -24,6 +24,20 @@ Nosso foco é democratizar o conhecimento sobre **Data Streaming**, **Integraç�
 
 ---
 
+## 🏛️ Arquiteturas
+
+Nossos labs exploram as seguintes arquiteturas de dados:
+
+| Arquitetura | Descrição |
+|-------------|-----------|
+| **Data Lakehouse** | Arquitetura unificada combinando data lake e data warehouse |
+| **Data Mesh** | Arquitetura descentralizada orientada a domínios |
+| **Data Vault 2.0** | Modelagem para data warehouses ágeis e auditáveis |
+| **Event-Driven Architecture** | Sistemas orientados a eventos e mensageria |
+| **Kappa Architecture** | Processamento unificado de streams em tempo real |
+
+---
+
 ## 🔬 Labs 2026
 
 ### Utility

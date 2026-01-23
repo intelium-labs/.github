@@ -1,0 +1,72 @@
+name: 💡 Sugestão de Lab
+description: Sugira um novo lab para o Intelium Labs
+labels: ["lab-suggestion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Adoramos novas ideias! 🚀
+        
+        **Importante:** Labs devem utilizar nossa stack atual:
+        - **Streaming:** Apache Kafka, Confluent Platform, Apache Flink
+        - **Governança:** Lenses.io, Schema Registry
+        - **Query Federation:** Trino
+        - **Linguagens:** Python, SQL
+        - **Infraestrutura:** Docker, Docker Compose
+        
+        Sugestões de novas ferramentas? Abra uma [discussão](https://github.com/orgs/intelium-labs/discussions).
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Descrição do Lab
+      description: Descreva o lab que você gostaria de ver
+      placeholder: |
+        Ex: Um lab sobre CDC (Change Data Capture) usando Debezium com Kafka
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: stack
+    attributes:
+      label: Stack sugerida
+      description: Selecione as tecnologias que o lab utilizaria
+      options:
+        - label: Apache Kafka
+        - label: Confluent Platform
+        - label: Apache Flink
+        - label: Trino
+        - label: Lenses.io
+        - label: Schema Registry
+        - label: Python
+        - label: SQL
+
+  - type: dropdown
+    id: architecture
+    attributes:
+      label: Arquitetura relacionada
+      description: Qual arquitetura esse lab exploraria?
+      options:
+        - Data Lakehouse
+        - Data Mesh
+        - Data Vault 2.0
+        - Event-Driven Architecture
+        - Kappa Architecture
+        - Outra / Não sei
+
+  - type: textarea
+    id: use_case
+    attributes:
+      label: Caso de uso
+      description: Qual problema real esse lab ajudaria a resolver?
+      placeholder: |
+        Ex: Sincronização de dados entre sistemas legados e data lake em tempo real
+
+  - type: textarea
+    id: references
+    attributes:
+      label: Referências (opcional)
+      description: Links, artigos ou documentação relevante
+      placeholder: |
+        - https://docs.confluent.io/...
+        - https://flink.apache.org/...
